@@ -12,7 +12,7 @@ RUN apt-get update && \
     apt-get install -y \
       curl \
       tzdata \
-      libicu60 \
+      libicu66 \
       libssl1.0 && \
     # Change `users` gid to match the passed in $gid
     sed -i "s/users:x:[0-9]\+:/users:x:$gid:/" /etc/group && \
