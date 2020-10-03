@@ -1,6 +1,10 @@
 FROM ubuntu:latest
 
-LABEL maintainer="Jee"
+LABEL name="docker-deluge" \
+      maintainer="Jee jee@eer.fr" \
+      description="Deluge is a lightweight, Free Software, cross-platform BitTorrent client." \
+      url="https://deluge-torrent.org/" \
+      org.label-schema.vcs-url="https://github.com/jee-r/docker-deluge"
 
 ENV DEBIAN_FRONTEND="noninteractive" \
     XDG_DATA_HOME="/config" \
