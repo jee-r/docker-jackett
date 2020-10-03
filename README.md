@@ -37,6 +37,4 @@ services:
       timeout: 15s
       #retries: 3
       start_period: 10s
-
-
 ```
