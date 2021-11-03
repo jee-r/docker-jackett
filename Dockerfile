@@ -4,7 +4,8 @@ LABEL name="docker-jackett" \
       maintainer="Jee jee@eer.fr" \
       description="jackett is a lightweight, Free Software, cross-platform BitTorrent client." \
       url="https://github.com/Jackett/Jackett" \
-      org.label-schema.vcs-url="https://github.com/jee-r/docker-jackett"
+      org.label-schema.vcs-url="https://github.com/jee-r/docker-jackett" \
+      org.opencontainers.image.source="https://github.com/jee-r/docker-jackett" 
 
 ENV DEBIAN_FRONTEND="noninteractive" \
     XDG_DATA_HOME="/config" \
