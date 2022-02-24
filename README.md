@@ -32,7 +32,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
     command: ["/opt/Jackett/jackett"]
     healthcheck:
-      test: ["CMD", "/usr/local/bin/healthcheck.sh"]
+      test: ["CMD", "/usr/local/bin/healthcheck"]
       interval: 10s
       timeout: 15s
       #retries: 3

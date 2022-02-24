@@ -11,6 +11,8 @@ ENV DEBIAN_FRONTEND="noninteractive" \
     XDG_DATA_HOME="/config" \
     XDG_CONFIG_HOME="/config"
 
+COPY rootfs /
+
 RUN apt-get update && \
     apt-get install -y \
       curl \
@@ -21,7 +23,6 @@ RUN apt-get update && \
     tar xf /tmp/jackett.tar.gz -C /opt/ && \
     rm -rf /var/lib/apt/lists/* /tmp/*
 
-COPY healthcheck.sh /usr/local/bin/healthcheck.sh
 EXPOSE 9117
 USER jackett
 VOLUME ["/config"]
